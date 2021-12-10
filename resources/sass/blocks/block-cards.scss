@@ -1,0 +1,28 @@
+.block-cards {
+  margin-bottom: 70px;
+  margin-top: 70px;
+
+  .content {
+    margin: auto;
+  }
+
+  .items {
+    display: flex;
+    justify-content: space-between;
+    margin: initial;
+
+    > div {
+      width: 410px;
+    }
+
+    .title {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .subtitle {
+      color: #5f5c5c;
+      line-height: 30px;
+    }
+  }
+}

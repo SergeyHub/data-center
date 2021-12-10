@@ -1,0 +1,11 @@
+.header-component {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .form-group {
+    padding: 10px;
+    width: 50%;
+  }
+}

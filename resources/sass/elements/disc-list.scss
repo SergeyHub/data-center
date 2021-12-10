@@ -1,0 +1,18 @@
+ul.disc-list li {
+  line-height: 28px;
+  padding-left: 20px;
+  position: relative;
+
+  &::before {
+    border: 2px solid #f0008b;
+    border-radius: 100%;
+    content: '';
+    display: block;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 10px;
+  }
+
+}

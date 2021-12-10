@@ -1,0 +1,47 @@
+.checked-list {
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+  .header {
+    background: initial;
+    padding-bottom: 25px;
+
+    .subtitle {
+      color: black;
+      margin: auto auto 30px;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #09408a;
+      font-size: 25px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
+  .block-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media(max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .item {
+    height: 45px;
+    margin-bottom: 45px;
+    max-width: 550px;
+    padding-left: 30px;
+    position: relative;
+    font-weight: 300;
+
+    img {
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+}

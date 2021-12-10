@@ -1,0 +1,46 @@
+.page-news-detailed {
+  .container {
+    padding: 50px 0;
+    position: relative;
+
+    .news {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: inherit;
+      justify-content: flex-start;
+      margin: 0 auto;
+      max-width: 850px;
+      min-height: 1100px;
+
+      > div {
+        align-self: center;
+      }
+
+      h3 {
+        font-size: 25px;
+      }
+
+      a {
+        color: #0b4696;
+        font-weight: bold;
+      }
+
+    }
+  }
+
+  .header-title {
+    h1 {
+      text-align: center;
+      @media(max-width: 768px) {
+        font-size: 26px;
+      }
+    }
+
+    .subtitle {
+      color: white;
+      font-size: 14px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}

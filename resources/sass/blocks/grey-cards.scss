@@ -1,0 +1,47 @@
+.grey-cards {
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  .subtitle {
+    margin: auto auto 30px;
+    max-width: 800px;
+  }
+
+  .card-subtitle {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 20px;
+  }
+
+  .block-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    > div {
+      background: #f2f2f2;
+      height: auto;
+      margin: 10px;
+      max-width: 395px;
+      padding: 10px;
+
+
+      .card-title {
+        margin-bottom: 10px;
+      }
+
+      .img-wrap {
+        margin: 20px auto;
+
+        img {
+          max-width: 70px;
+        }
+      }
+
+      h3 {
+        color: #09408a;
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.slick-slide {
+  margin: 0 15px;
+}
+
+.slick-next::before {
+  content: url('/images/icons/arrow-right-white.svg');
+  left: 12px;
+  position: absolute;
+  top: 2px;
+}
+
+.slick-prev::before {
+  content: url('/images/icons/arrow-left-white.svg');
+  left: 12px;
+  position: absolute;
+  top: 2px;
+}
+
+.slick-prev {
+  left: -35px;
+}
+
+.slick-next {
+  right: -35px;
+}
+
+.slick-prev {
+  //background: #ef008d;
+  background: linear-gradient(144.25deg, #0b4696 14.4%, #ef008d 85.6%);
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+}
+
+.slick-next {
+  background: linear-gradient(144.25deg, #0b4696 14.4%, #ef008d 85.6%);
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+}
+
+.slick-dots {
+  bottom: auto;
+  padding: 30px 80px;
+  text-align: left;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.slick-dots li button {
+  background: #c4c4c4;
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+}
+
+.slick-dots li.slick-active button {
+  background: #ef008d;
+}
+
+.slick-dots li button::before {
+  content: '';
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+  //background: #ef008d;
+  background: linear-gradient(144.25deg, #0b4696 14.4%, #ef008d 85.6%);
+}
+
+.slick-next:hover,
+.slick-next:focus {
+  background: linear-gradient(144.25deg, #0b4696 14.4%, #ef008d 85.6%);
+}
+
+@media (max-width: 768px) {
+  .slick-dots {
+    bottom: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .slick-arrow {
+    display: none !important;
+  }
+}

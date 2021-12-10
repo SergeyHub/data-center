@@ -1,0 +1,39 @@
+.quote {
+  .line {
+    border-top: solid 1.5px #e1e1e1;
+    padding-bottom: 20px;
+  }
+
+  .person {
+    display: flex;
+
+    .img {
+      height: 100px;
+      width: 100px;
+    }
+
+    .name {
+      color: #0b4696;
+    }
+
+    .post {
+      color: #ef008d;
+      font-size: 14px;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+  }
+
+  .content {
+    font-style: italic;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+}

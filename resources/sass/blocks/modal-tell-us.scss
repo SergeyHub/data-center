@@ -1,0 +1,14 @@
+#modal-tell-us {
+  form {
+    width: 550px;
+    margin: 0 auto;
+    flex-direction: column;
+    .text-input, .textarea {
+      width: initial;
+    }
+  }
+
+  .content.modal__form {
+    padding-top: 40px;
+  }
+}

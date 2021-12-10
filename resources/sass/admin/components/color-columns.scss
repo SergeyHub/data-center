@@ -1,0 +1,14 @@
+.color-columns {
+  padding: 20px;
+  width: 100%;
+
+  h2 {
+    border: 0;
+  }
+
+  .column {
+    border: solid thin #ccc;
+    margin-top: 20px;
+    padding: 10px;
+  }
+}

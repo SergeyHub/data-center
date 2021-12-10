@@ -1,0 +1,59 @@
+.page-main {
+  .advantages__container {
+    flex-wrap: wrap;
+
+    .item {
+      max-width: 400px;
+      width: 400px;
+    }
+
+    &.two-side {
+      .item {
+        max-width: 50%;
+        width: 50%;
+
+        @media (max-width: 640px) {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    &.three-side {
+      .item {
+        max-width: 33.3333%;
+        width: 33.33333%;
+
+        @media (max-width: 1220px) {
+          max-width: 50%;
+          width: 50%;
+        }
+        @media (max-width: 640px) {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    &.four-side {
+      .item {
+        max-width: 25%;
+        width: 25%;
+
+        @media (max-width: 1220px) {
+          max-width: 33.3333%;
+          width: 33.3333%;
+        }
+
+        @media (max-width: 768px) {
+          max-width: 50%;
+          width: 50%;
+        }
+        @media (max-width: 640px) {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

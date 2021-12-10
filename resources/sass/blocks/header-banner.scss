@@ -1,0 +1,78 @@
+.banner {
+  background: linear-gradient(70.67deg, #034694 0%, #ec008c 110.5%);
+  color: #fff;
+  position: relative;
+
+  img {
+    bottom: 0;
+    max-height: 100%;
+    position: absolute;
+    right: 0;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 50px;
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 5px;
+      position: relative;
+
+    }
+  }
+
+  .btn {
+    background: linear-gradient(99.16deg, #0b4696 6.83%, #ef008d 100%);
+  }
+
+  @media (max-width: 768px) {
+    a.btn {
+      display: block;
+    }
+  }
+
+  .content {
+    display: block;
+    padding-bottom: 150px;
+    padding-top: 100px;
+
+    @media (max-width: 768px) {
+      padding-bottom: 40px;
+      padding-top: 50px;
+    }
+  }
+
+  .bg-image {
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 675px;
+
+    @media (max-width: 1200px) {
+      background-image: none !important;;
+    }
+  }
+
+  &__title {
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .banner__btn-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px -10px 0;
+    align-items: flex-start;
+
+    & .btn {
+      margin: 15px 10px 0;
+    }
+  }
+}

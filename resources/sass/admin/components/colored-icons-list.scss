@@ -1,0 +1,49 @@
+.colored-list-icons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+
+  .elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .col {
+    border: 1px solid #f5f5f5;
+
+    .sketch-picker {
+      margin: auto;
+    }
+  }
+
+  .add-element {
+    margin: auto;
+
+    .button {
+      transform: none;
+    }
+  }
+}
+
+.colored-list-icons-item {
+  align-items: center;
+  border: 1px solid #f5f5f5;
+  box-sizing: border-box;
+  cursor: move;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 45%;
+
+  .delete {
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

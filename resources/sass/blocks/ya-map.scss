@@ -1,0 +1,7 @@
+#ya-map {
+  height: 380px;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
+}

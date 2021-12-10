@@ -1,0 +1,17 @@
+.simple-icon-list {
+  width: 100%;
+
+  ul {
+    li {
+      line-height: 36px;
+      padding-left: 35px;
+      position: relative;
+
+      img {
+        left: 0;
+        position: absolute;
+        top: 16px;
+      }
+    }
+  }
+}

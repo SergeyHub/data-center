@@ -1,0 +1,33 @@
+.research-companies-wrapper {
+  background: url('/images/research/gradient.png') 0 0 repeat-x;
+  margin-top: 50px;
+  padding: 40px 0;
+}
+
+.grid {
+  display: grid;
+
+  &_1 {
+    grid-template-columns: 1fr;
+  }
+
+  &_20-80 {
+    grid-template-columns: 20% 80%;
+  }
+
+  &_company {
+    column-gap: 3.5em;
+  }
+
+  &_companies {
+    row-gap: 3.75em;
+  }
+}
+
+.company {
+  &__image {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

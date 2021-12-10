@@ -1,0 +1,89 @@
+.research-gallery {
+  column-gap: 2em;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 1.5em auto;
+
+  &__text {
+    p {
+      margin-bottom: 12px;
+      font-weight: initial;
+    }
+
+    li {
+      position: relative;
+      font-size: 15px;
+      margin-bottom: 12px;
+      padding-left: 2.5em;
+      line-height: 22px;
+    }
+
+    li::before {
+      content: "";
+      background: url('/images/icons/circle_red.png') no-repeat center center;
+      width: 9px;
+      height: 9px;
+      top: 0.5em;
+      left: 1px;
+      position: absolute;
+    }
+    .pink {
+      color: #ed008c;
+      fill: #ed008c;
+    }
+
+    .blue {
+      color: #039;
+      fill: #039;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1.125em;
+  }
+
+  &__ul {
+    column-gap: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &_navigation {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &__images {
+    margin: 1em auto;
+  }
+
+  &__li {
+    height: auto;
+    width: 5em;
+
+    &_full {
+      display: none;
+      height: auto;
+      width: 100%;
+    }
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__image {
+    border-radius: 2px;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.3);
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

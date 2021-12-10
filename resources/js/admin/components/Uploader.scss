@@ -1,0 +1,12 @@
+.uploader {
+  width: 145px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+
+  i {
+    cursor: pointer;
+  }
+}

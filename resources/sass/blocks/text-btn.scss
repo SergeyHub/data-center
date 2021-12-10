@@ -1,0 +1,35 @@
+.text-btn {
+  .block-content {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    @media(max-width: 768px) {
+      flex-direction: column;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    .text {
+      flex-grow: 1;
+      margin-right: 30px;
+      @media(max-width: 768px) {
+        margin-bottom: 30px;
+        margin-right: 0px;
+      }
+    }
+
+    &.column {
+      flex-direction: column;
+    }
+
+    .button-wrap {
+      margin-bottom: 20px;
+    }
+  }
+}
+.bg_btn_central_line {
+  .block-content{
+    display: block;
+  }
+}

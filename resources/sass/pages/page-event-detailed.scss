@@ -1,0 +1,158 @@
+.page-event-detailed {
+  h1 {
+    text-align: center;
+  }
+
+  .container {
+    min-height: 800px;
+    position: relative;
+  }
+
+  .header-title {
+    .subtitle {
+      font-size: 20px;
+      margin-bottom: 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+  }
+
+  .location {
+    line-height: 30px;
+    margin: auto auto 50px;
+    text-align: center;
+    width: 400px;
+    @media(max-width: 768px) {
+      width: initial;
+    }
+  }
+
+  .btn-register {
+    text-align: center;
+
+    a {
+      background: #ef008d;
+      border-radius: 30px;
+      color: white;
+      display: inline-block;
+      height: 45px;
+      line-height: 45px;
+      margin-bottom: 70px;
+      text-align: center;
+      width: 220px;
+    }
+  }
+
+  .event {
+    margin: 0 auto;
+    max-width: 850px;
+    min-height: 500px;
+  }
+
+  .tinymce {
+    font-family: Lato, sans-serif;
+    margin: 70px auto;
+    max-width: 850px;
+
+    .subtitle {
+      color: #5f5c5c;
+      line-height: 30px;
+    }
+
+    h2 {
+      color: black;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 40px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      text-align: initial;
+    }
+  }
+
+  .block-schedule {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  .schedule {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+
+    > div {
+      display: flex;
+      margin-bottom: 40px;
+    }
+
+    .time {
+      font-size: 20px;
+      font-weight: bold;
+      min-width: 200px;
+      text-align: center;
+      width: 200px;
+    }
+
+    .subject {
+      flex-grow: 1;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .description {
+      color: #5f5c5c;
+      line-height: 30px;
+      margin-top: 5px;
+    }
+  }
+
+  h3 {
+    color: #09408a;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .block-cards {
+    h3 {
+      margin-bottom: 40px;
+    }
+  }
+
+  p {
+    line-height: 30px;
+  }
+
+  .fotorama {
+    .fotorama__arr.fotorama__arr--prev {
+      background-image: url('/images/icons/arrow_left_img.svg');
+      background-position: initial;
+      left: 40px;
+    }
+
+    .fotorama__arr.fotorama__arr--next {
+      background-image: url('/images/icons/arrow_right_img.svg');
+      background-position: initial;
+      right: 40px;
+    }
+  }
+
+  #yamap {
+    height: 380px;
+  }
+
+  #events-apply-request .content {
+    textarea {
+      height: 100px;
+    }
+
+    input {
+      height: 50px;
+    }
+  }
+
+
+}

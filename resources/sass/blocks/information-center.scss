@@ -1,0 +1,69 @@
+.information-center {
+  padding-bottom: 70px;
+  padding-top: 70px;
+  @media(max-width: 768px) {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .content > div {
+    display: flex;
+    @media(max-width: 768px) {
+      width: 100%;
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    @media(max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .text-input {
+      margin-right: 50px;
+      position: relative;
+      width: 300px;
+      @media(max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    > div {
+      display: flex;
+      @media(max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+
+
+    label {
+      color: #5f5c5c;
+      cursor: text;
+      left: 10px;
+      position: absolute;
+      top: 16px;
+
+      .required {
+        color: red;
+      }
+    }
+
+    input::placeholder {
+      color: transparent;
+    }
+
+    input:not(:placeholder-shown),
+    input:focus {
+      & + label {
+        left: 0;
+        top: -20px;
+      }
+    }
+  }
+}

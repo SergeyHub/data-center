@@ -1,0 +1,46 @@
+.page-events {
+  .cards__container {
+    justify-content: initial;
+  }
+
+  .card {
+
+    max-width: 410px;
+
+    .status {
+      color: #777;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 25px;
+      margin-bottom: 16px;
+    }
+
+
+    ul {
+      li {
+        color: #777;
+        line-height: 20px;
+        margin-bottom: 10px;
+        padding-left: 30px;
+        position: relative;
+
+        img {
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+}

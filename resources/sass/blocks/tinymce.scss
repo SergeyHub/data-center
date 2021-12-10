@@ -1,0 +1,61 @@
+.tinymce {
+  @media(max-width: 768px) {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+
+    &[align=left] {
+      padding: 1em 1em 1em 0;
+    }
+
+    &[align=right] {
+      padding: 1em 0 1em 1em;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 20px 0;
+
+    @media(max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  h2 {
+    color: #09408a;
+    text-align: center;
+  }
+
+  li {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      border: 3px solid #039;
+      border-radius: 50%;
+      content: '';
+      height: 0;
+      left: 1px;
+      position: absolute;
+      top: 0.6em;
+      width: 0;
+    }
+  }
+
+  .float-left {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.container > .tinymce {
+  padding: 30px 0;
+}

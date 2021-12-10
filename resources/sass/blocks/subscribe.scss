@@ -1,0 +1,73 @@
+.subscribe {
+  @media(max-width: 768px) {
+    padding-bottom: 35px;
+    padding-top: 35px;
+  }
+
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    span {
+      font-size: 15px;
+      font-weight: 300;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      width: 50%;
+
+      .success-message,
+      .errors {
+        display: none;
+        margin-top: 1em;
+        text-align: center;
+        width: 100%;
+      }
+
+      .errors {
+        color: red;
+      }
+
+      .text-input {
+        width: 410px;
+
+        input {
+          padding-left: 50px;
+        }
+
+        &::before {
+          content: url('/images/icons/mail-pink.svg');
+          left: 15px;
+          position: absolute;
+          top: 14px;
+        }
+
+        @media (max-width: 1024px) {
+          width: auto;
+        }
+      }
+
+      button.gradient {
+        height: 50px;
+        min-width: auto;
+        width: 200px;
+      }
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
+
+      @media (max-width: 425px) {
+        width: 100%;
+      }
+    }
+  }
+}

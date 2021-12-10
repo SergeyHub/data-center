@@ -1,0 +1,316 @@
+.modal {
+  &__container {
+    background: #f4f4f4;
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    .close {
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__form {
+    padding-top: 70px;
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .captcha {
+        padding: 20px;
+        width: 100%;
+
+        .g-recaptcha > div {
+          margin: 0 auto;
+        }
+      }
+
+      .placeholder {
+        position: absolute;
+        top: 15px;
+        left: 100px;
+      }
+
+      .placeholder::after {
+        content: '*';
+        color: red;
+      }
+
+      textarea:focus + .placeholder {
+        display: none;
+      }
+
+      .success-message,
+      .errors {
+        display: none;
+        margin-top: 1em;
+        text-align: center;
+        width: 100%;
+      }
+
+      .errors {
+        color: red;
+      }
+
+      span {
+        color: #5f5c5c;
+        font-size: 15px;
+      }
+
+      .textarea {
+        width: 100%;
+        position:relative;
+      }
+
+      .text-input {
+        padding-left: 40px;
+        position: relative;
+        width: 300px;
+        @media(max-width: 768px) {
+          width: 100%;
+        }
+
+        label {
+          color: #5f5c5c;
+          cursor: text;
+          left: 55px;
+          position: absolute;
+          width: 80%;
+          line-height: 50px;
+          height: 100%;
+          //top: 16px;
+
+          .required {
+            color: red;
+          }
+
+          .attache-icon {
+            float: right;
+            display: none;
+          }
+        }
+
+        input::placeholder {
+          color: transparent;
+        }
+
+        input:not(:placeholder-shown):not([type='file']),
+        input:focus {
+          & + label {
+            left: 0;
+            top: -40px;
+          }
+        }
+
+        input[type='file'] {
+          visibility: hidden;
+        }
+
+        &.before-people::before {
+          content: url('/images/icons/people.svg');
+          left: 15px;
+          position: absolute;
+          top: 14px;
+        }
+
+        &.before-organization::before {
+          content: url('/images/icons/organization.svg');
+          left: 15px;
+          position: absolute;
+          top: 14px;
+        }
+
+        &.before-phone-pink::before {
+          content: url('/images/icons/phone-pink.svg');
+          left: 15px;
+          position: absolute;
+          top: 14px;
+        }
+
+        &.before-mail-pink::before {
+          content: url('/images/icons/mail-pink.svg');
+          left: 15px;
+          position: absolute;
+          top: 14px;
+        }
+      }
+
+      .checkboxes {
+        display: flex;
+        margin-bottom: 40px;
+
+        @media(max-width: 768px) {
+          flex-wrap: wrap;
+        }
+
+        > div {
+          margin-bottom: 10px;
+          margin-right: 50px;
+        }
+      }
+
+      .btn.gradient {
+        width: 630px;
+      }
+
+      .policy {
+        a {
+          color: #039;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .label {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  &__container.modal--new {
+      background: rgba(51, 51, 51, 0.7);
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      .modal__wrapper {
+        padding: 0 50px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-height: 100%;
+        transform: translate(-50%, -50%);
+
+        @media all and (max-width: 1000px) {
+          padding: 0;
+          top: 0;
+          left: 0;
+          width: 100%;
+          transform: none;
+        }
+      }
+
+      .close {
+        background: transparent;
+        right: 0;
+        top: 20px;
+
+        width: 28px;
+        height: 28px;
+
+
+        @media all and (max-width: 1000px) {
+          right: 15px;
+          top: 15px;
+        }
+
+        &::after,
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 10;
+
+          width: 100%;
+          height: 3px;
+
+          background-color: #f4f4f4;
+
+          border-radius: 5px;
+          @media all and (max-width: 1000px) {
+            background-color: #ef008d;
+          }
+        }
+
+        &::after {
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+        &::before {
+          transform: translate(-50%, -50%) rotate(-45deg);
+        }
+      }
+
+      &.active {
+        display: block;
+      }
+
+      & .modal__form {
+        position: relative;
+        padding: 20px 110px 36px;
+        width: 850px;
+        max-height: 100%;
+
+        background-color: #F4F4F4;
+        
+        @media all and (max-width: 1000px) {
+          width: 100%;
+          max-width: 100%;
+        }
+
+        @media all and (max-width: 768px) {
+          padding: 20px 20px;
+
+        }
+
+
+      form {
+        .textarea {
+          & textarea {
+            min-width: 100%;
+            max-width: 100%;
+          }
+        }
+
+        .checkboxes {
+          margin-right: -30px;
+
+          @media all and (max-width: 768px) {
+            flex-direction: column;
+          }
+
+          > div {
+            margin-right: 15px;
+          }
+        }
+      }
+  }
+
+    & .modal {
+      position: absolute;
+
+      & .modal-content {
+        box-shadow: 10px 10px 10px 10px rgb(0,0,0,0.2);
+      }
+
+      & .close {
+        right: 15px;
+        top: 15px;
+        &::after,
+        &::before {
+            background-color: #ef008d;
+        }
+
+      }
+    }
+  }
+
+}

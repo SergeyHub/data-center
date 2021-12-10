@@ -1,0 +1,51 @@
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding-right: 30px;
+    width: 50%;
+
+    .date {
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      color: #0b4696;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .preview {
+      font-size: 15px;
+      font-weight: 300;
+      margin-right: 50px;
+
+      @media (max-width: 425px) {
+        margin: 0;
+      }
+    }
+
+    &:hover {
+      .title {
+        text-decoration: underline;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+
+    @media (max-width: 425px) {
+      padding-right: 0;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.builder-drawler {
+  .ant-drawer-body {
+    padding: 0;
+  }
+
+  .ant-collapse-header {
+    font-weight: 400;
+  }
+
+  .ant-collapse-borderless {
+    background: #fff;
+  }
+
+  .drawler__item {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+
+    &:hover {
+      background-color: #e6f7ff;
+    }
+  }
+
+  .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+    padding: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.pagination {
+  display: flex;
+  margin-bottom: 70px;
+  @media(max-width: 768px) {
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+  }
+
+  a {
+    color: #0b4696;
+    font-size: 20px;
+    margin-right: 25px;
+    @media(max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  span {
+    color: #777;
+    font-size: 20px;
+    margin-right: 25px;
+  }
+}

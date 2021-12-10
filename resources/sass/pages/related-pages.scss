@@ -1,0 +1,43 @@
+.related-pages-grid {
+  column-gap: 1.25em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1em;
+  row-gap: 1em;
+
+  &__item {
+    border: thin solid #039;
+    border-radius: 10px;
+    padding: 0.95em 1.05em;
+
+    &:hover {
+      border-color: #ed008c;
+    }
+  }
+
+  &__text {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 0.75em;
+    text-align: left;
+  }
+
+  &__heading {
+    display: table-caption;
+    font-size: 1.438em;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 0.75em;
+    text-align: left;
+  }
+}
+
+.related-pages-heading {
+  color: #09408a;
+  font-size: 2.25em;
+  font-weight: bold;
+  line-height: 2.25em;
+  margin: 4.375em 0 1.125em;
+  text-align: center;
+}

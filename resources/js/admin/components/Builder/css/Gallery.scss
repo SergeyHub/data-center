@@ -1,0 +1,64 @@
+.gallery {
+  .items {
+    .item {
+      display: flex;
+      justify-content: space-between;
+
+      .texts {
+        width: calc(100% - 180px - 50px);
+
+        .item {
+          display: flex;
+          justify-content: space-between;
+
+          label {
+            width: 30px;
+          }
+
+          .text {
+            width: calc(100% - 30px);
+          }
+        }
+      }
+
+      .image {
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 80%;
+        }
+      }
+
+      .controls {
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .col {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+
+        .upload, .move, .delete {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          & > i {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

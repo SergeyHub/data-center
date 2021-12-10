@@ -1,0 +1,34 @@
+.offer {
+  background: #072A88;
+  color: #fff;
+  padding: 32px 0;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      align-self: center;
+      font-size: 25px;
+      font-weight: 300;
+      max-width: 50%;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+        margin-bottom: 30px;
+        max-width: 100%;
+      }
+    }
+
+    .btn {
+      font-weight: 300;
+      margin: auto;
+      position: relative;
+      width: 300px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}

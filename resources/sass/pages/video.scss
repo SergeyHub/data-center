@@ -1,0 +1,167 @@
+.svg-video {
+  height: 0;
+}
+
+.hf-video {
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em auto;
+  row-gap: 26px;
+  @media(max-width: 768px) {
+    grid-template-columns: 1fr;
+    .company-video {
+      height: 500px;
+    }
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      color: #ed008c;
+      cursor: pointer;
+      fill: #ed008c;
+    }
+  }
+}
+
+.hf-video .company-video__title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  left: 30px;
+  line-height: 25px;
+  position: absolute;
+  right: 30px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(1, 0, 0, 0.75);
+  top: 35px;
+  z-index: 2;
+}
+
+.hf-video .company-video__play {
+  margin: -45px 0 0 -45px;
+  top: 68%;
+  z-index: 2;
+}
+
+.hf-video .company-video__play svg {
+  height: 90px;
+  width: 90px;
+}
+
+.videos_global .hf-video .company-video__title {
+  z-index: 3;
+}
+
+.videos_global .company-video__image {
+  position: relative;
+  z-index: 2;
+}
+
+.videos_global .play_no_popup {
+  cursor: pointer;
+  top: 66%;
+}
+
+.videos_global .play_no_popup + p {
+  color: #000;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.modern #hf-banner-video {
+  background-image: url('/images/video-hf-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+  max-height: 307px;
+  min-height: 277px;
+}
+
+.modern #hf-banner-video > div {
+  margin-bottom: 30px;
+}
+
+.modern #hf-banner-video h1 {
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.veeam #hf-banner-video {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.veeam #hf-banner-video .services-header__text {
+  max-width: 100%;
+}
+
+.veeam #hf-banner-video .services-header__content {
+  margin-top: 17px;
+}
+
+.company-text {
+  margin-bottom: 35px;
+}
+
+.company-video {
+  position: relative;
+}
+
+.company-video__wrap {
+  height: 300px;
+  position: relative;
+}
+
+.company-video__image {
+  background: #000;
+  height: 100%;
+
+  img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+    width: 100%;
+  }
+}
+
+.company-video__play {
+  fill: #fff;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  position: absolute;
+  top: 50%;
+}
+
+.company-video__play svg {
+  height: 100px;
+  width: 100px;
+}
+
+.company-video__link {
+  font-weight: 700;
+}
+
+.company-video__player {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.company-video__player iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.is-play .company-video__player {
+  display: block;
+}

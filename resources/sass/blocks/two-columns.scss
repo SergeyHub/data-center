@@ -1,0 +1,22 @@
+.two-columns {
+  padding-bottom: 70px;
+  margin-top: 70px;
+
+  .block-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 768px) {
+      grid-row-gap: 20px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .tinymce {
+    .content {
+      @media (max-width: 768px) {
+        padding: initial;
+      }
+    }
+  }
+}

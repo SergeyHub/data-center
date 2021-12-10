@@ -1,0 +1,74 @@
+.feedback-page .modal__form {
+
+  margin-bottom: 70px;
+
+  .text-input {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .placeholder {
+    position: absolute;
+    top: 15px;
+    left: 100px;
+  }
+
+  .placeholder::after {
+    content: '*';
+    color: red;
+  }
+
+  textarea:focus + .placeholder {
+    display: none;
+  }
+
+  form .text-input label {
+    left: 15px;
+
+    .captcha {
+      padding: 20px;
+      width: 100%;
+
+      .g-recaptcha > div {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .success-message,
+  .errors {
+    display: none;
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .estimate {
+    margin-bottom: 20px;
+  }
+
+  .estimate-content {
+    display: flex;
+    padding-top: 20px;
+
+    .value {
+      height: 25px;
+      margin-right: 10px;
+      width: 25px;
+    }
+  }
+
+  .estimate-content div {
+    background-image: url('images/icons/star-off.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &.active {
+      background-image: url('images/icons/star-on.png');
+    }
+  }
+
+  .btn.gradient {
+    width: auto;
+  }
+}

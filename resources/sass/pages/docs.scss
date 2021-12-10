@@ -1,0 +1,115 @@
+.docs__row {
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px auto;
+  margin-left: 0;
+  row-gap: 20px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  &_one {
+    grid-template-columns: 1fr;
+  }
+}
+
+.docs__heading {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  margin: 70px 0 34px;
+  text-align: left;
+}
+
+.document {
+  &__description {
+    padding-bottom: 10px;
+  }
+}
+
+.document__file {
+  align-items: center;
+  display: flex;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.document__image {
+  max-width: 100%;
+}
+
+.document__icon {
+  fill: #039;
+  flex-shrink: 0;
+  height: 50px;
+  margin-right: 35px;
+  width: 40px;
+}
+
+.document__link {
+  color: #039;
+  fill: #039;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 15px;
+
+  &:hover {
+    $hover-color: #ed008c;
+    color: $hover-color;
+    fill: $hover-color;
+    text-decoration-color: $hover-color;
+    text-decoration-line: underline;
+    text-decoration-skip: edges;
+    text-decoration-skip-ink: auto;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.1em;
+  }
+}
+
+.company-office__form {
+  align-items: center;
+  border: solid 2px #ed008c;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+  text-align: center;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.company-office__form .company-ermakova {
+  display: inline-block;
+  max-width: 238px;
+  @media (max-width: 768px) {
+    max-width: initial;
+  }
+}
+
+.company-office__form .company-office__form-right {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.company-office__form__label {
+  font-weight: 700;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.company-office__form__text {
+  margin-bottom: 10px;
+}
+
+.none {
+  display: none;
+}
+
+.modal__container {
+  .docs-image {
+    height: auto;
+    max-width: 100%;
+  }
+}

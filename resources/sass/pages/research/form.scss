@@ -1,0 +1,53 @@
+.research-form {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.btn {
+  margin: 1em 0;
+}
+
+.success-message,
+.errors {
+  display: none;
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.errors {
+  color: red;
+}
+
+.captcha {
+  padding: 20px;
+  width: 100%;
+
+  .g-recaptcha > div {
+    margin: 0 auto;
+  }
+}
+
+.policy {
+  margin-bottom: 15px;
+
+  a {
+    color: #039;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .label {
+    font-size: 13px;
+  }
+}
+
+form .btn.gradient {
+  margin: 0 auto;
+}
+
+.form-group_100 {
+  width: 100%;
+}

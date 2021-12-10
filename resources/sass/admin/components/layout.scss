@@ -1,0 +1,17 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+*:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.control-buttons {
+  position: fixed;
+  right: 58px;
+  text-align: center;
+  top: 21px;
+}

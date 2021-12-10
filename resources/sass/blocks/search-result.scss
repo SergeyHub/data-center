@@ -1,0 +1,16 @@
+.search-result {
+  margin: 70px 0;
+
+  .query-sentence {
+    color: grey;
+  }
+
+  li {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

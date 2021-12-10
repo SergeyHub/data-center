@@ -1,0 +1,8 @@
+.three-columns {
+  margin-bottom: 70px;
+
+  .block-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

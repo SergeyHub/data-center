@@ -1,0 +1,160 @@
+.knowledge-base {
+  align-items: flex-start;
+  column-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 42px;
+  margin-top: 30px;
+
+  &__link {
+    color: #0b4696;
+
+    &:hover,
+    &:focus {
+      color: #f2309d;
+    }
+  }
+
+  /**
+  * Accordion - START
+  */
+  &__slide {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__slide + &__ul {
+    display: none;
+  }
+
+  &__slide + &__ul_open {
+    display: grid;
+  }
+
+  &__triangle {
+    align-items: center;
+    color: #0b4696;
+    cursor: pointer;
+    display: flex;
+
+    &::after {
+      content: '\25bc';
+      font-size: 7px;
+      transition: all 0.5s;
+    }
+  }
+
+  &__slide_active &__triangle::after {
+    transform: rotate(180deg);
+  }
+
+  /**
+  * Accordion - FINISH
+  */
+
+  &__ul_depth-0 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    width: 410px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__li_depth-1 {
+    border-radius: 5px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 25px 30px;
+  }
+
+  &__li_depth-2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 15px 0;
+    padding-left: 10px;
+
+    .knowledge-base__triangle {
+      color: #f2309d;
+      margin-left: -10px;
+      padding-right: 12px;
+
+      &::after {
+        content: '\25b6';
+      }
+    }
+
+    .knowledge-base__slide {
+      justify-content: flex-start;
+    }
+
+    .knowledge-base__slide_active .knowledge-base__triangle::after {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__li_depth-3 {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 25px;
+    padding: 5px 24px;
+
+    .knowledge-base__triangle {
+      color: #919191;
+      margin-left: -20px;
+    }
+  }
+
+  &__li_depth-4 {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    padding-left: 10px;
+  }
+
+  &__article {
+    grid-column: span 2;
+    line-height: 25px;
+
+    .knowledge-base__ul_depth-1 {
+      column-gap: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+    }
+
+    .knowledge-base__li_depth-1,
+    .knowledge-base__li_depth-2,
+    .knowledge-base__li_depth-3,
+    .knowledge-base__li_depth-4 {
+      padding: 15px 0 0;
+    }
+
+    .tinymce {
+      table {
+        td {
+          padding: 10px;
+
+          p {
+            font-size: 14px;
+          }
+
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  &__heading_2 {
+    text-align: left;
+  }
+}

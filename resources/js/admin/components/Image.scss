@@ -1,0 +1,29 @@
+.img-container {
+  display: flex;
+
+  .img-wrap {
+    width: 145px;
+    height: 100px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .delete {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    background: #fff;
+    border: 1px solid #f5f5f5;
+    padding: 1px 6px;
+    cursor: pointer;
+  }
+}

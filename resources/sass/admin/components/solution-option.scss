@@ -1,0 +1,74 @@
+.solution-block {
+  & .form-group {
+    width: 100%;
+  }
+}
+.first-column-row,
+.solution-first-column-lis {
+  width: 100%;
+}
+.solution-first-column-item {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  border: 1px dashed grey;
+  margin-bottom: 15px;
+
+  & .form-group {
+    width: 100%;
+  }
+
+  & .form-group label {
+    margin-top: 0;
+  }
+
+  & .delete {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 10px;
+
+    cursor: pointer;
+  }
+}
+
+.solution-option-wrapper {
+  h3 {
+    margin-bottom: 30px;
+  }
+}
+
+.solution-option-item {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  border: 1px dashed grey;
+  margin-bottom: 15px;
+
+  & .delete {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 10px;
+
+    cursor: pointer;
+  }
+
+  & .from-group {
+    margin-bottom: 20px;
+
+    & label  {
+      font-size: 18px;
+    }
+  }
+}
